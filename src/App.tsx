@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { convertTextToPDF } from "./services/api";
 import PDFViewer from "./components/PDFViewer";
 import { Conversion } from "./types";

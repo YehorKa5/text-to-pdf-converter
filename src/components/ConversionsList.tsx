@@ -1,7 +1,7 @@
-import React, { memo } from "react";
+import { memo } from "react";
 import { Conversion } from "../types";
 
-type ConversionHistoryProps = {
+type ConversionsListProps = {
   conversions: Conversion[];
   setPdfUrl: (url: string) => void;
 };
@@ -13,10 +13,7 @@ const getConversionText = (convertionText: string) => {
     : convertionText;
 };
 
-const ConversionsList = ({
-  conversions,
-  setPdfUrl,
-}: ConversionHistoryProps) => {
+const ConversionsList = ({ conversions, setPdfUrl }: ConversionsListProps) => {
   return (
     <div className="mt-4">
       <h2 className="text-lg font-bold mb-2">Історія конвертацій</h2>

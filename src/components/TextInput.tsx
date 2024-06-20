@@ -1,11 +1,9 @@
-import React from "react";
-
-interface TextInputProps {
+type TextInputProps = {
   text: string;
   setText: (text: string) => void;
-}
+};
 
-function TextInput({ text, setText }: TextInputProps) {
+const TextInput = ({ text, setText }: TextInputProps) => {
   return (
     <textarea
       value={text}
@@ -14,6 +12,6 @@ function TextInput({ text, setText }: TextInputProps) {
       placeholder="Введіть текст тут..."
     />
   );
-}
+};
 
 export default TextInput;
